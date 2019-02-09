@@ -1,0 +1,101 @@
+<style>
+    #filterIconButton {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 160px;
+        left: 15px;
+        z-index: 3;
+        background-color: white;
+        border-top-right-radius: 15px;
+    }
+</style>
+
+<div id='filterIconButton' class='animatedButton'>
+    
+{#    <input type='file' 
+    name='portrait_editVideoProperties' 
+    id='portrait_editVideoProperties'
+    src=""/>#}
+    
+</div>
+
+<script>
+    var filterIconButton = document.getElementById("filterIconButton");
+    
+    filterIconButton.addEventListener("click", function () {
+        filterIconFunction();
+    });
+    
+    function filterIconFunction()
+    {
+        var searchArea_background = document.getElementById("searchArea_background");
+        var configurationArea_background = document.getElementById("configurationArea_background");
+        var sessionArea_background = document.getElementById("sessionArea_background");
+        var lyricsArea_background = document.getElementById("lyricsArea_background");
+        
+        searchArea_background.style.transition = "0.5s";
+        configurationArea_background.style.transition = "0.5s";
+        sessionArea_background.style.transition = "0.5s";
+        lyricsArea_background.style.transition = "0.5s";
+        
+        searchArea_background.style.opacity = "0.3";
+        configurationArea_background.style.opacity = "0.3";
+        sessionArea_background.style.opacity = "0.3";
+        lyricsArea_background.style.opacity = "0.3";
+        
+        var commentVideoSection = document.getElementById("commentVideoSection"); // CommentVideoBundle
+        var songIconButton = document.getElementById("songIconButton"); // ConfigurationBundle
+        var artistIconButton = document.getElementById("artistIconButton"); // ConfigurationBundle
+        var configurationArea_1Content = document.getElementById("configurationArea_1Content"); // ConfigurationBundle
+        var artistList = document.getElementById("artistList"); // ArtistBundle
+        var sessionArea = document.getElementById("sessionArea"); // SessionBundle
+        
+        
+        if (invisibleLayer_status === "1")
+        {
+            searchArea_background.style.backgroundColor = "black";
+            configurationArea_background.style.backgroundColor = "black";
+            sessionArea_background.style.backgroundColor = "black";
+            lyricsArea_background.style.backgroundColor = "black";
+            
+            commentVideoSection.style.color = "white";
+            songIconButton.style.color = "white";
+            artistIconButton.style.color = "white";
+            configurationArea_1Content.style.color = "white";
+            artistList.style.color = "white";
+            sessionArea.style.color = "white";
+            
+            commentVideoSection.style.textShadow = "0px 0px 20px black";
+            songIconButton.style.textShadow = "0px 0px 20px black";
+            artistIconButton.style.textShadow = "0px 0px 20px black";
+            configurationArea_1Content.style.textShadow = "0px 0px 20px black";
+            artistList.style.textShadow = "0px 0px 20px black";
+            sessionArea.style.textShadow = "0px 0px 20px black";
+            
+            invisibleLayer_status = "2";
+        } else if (invisibleLayer_status === "2")
+        {
+            searchArea_background.style.backgroundColor = "white";
+            configurationArea_background.style.backgroundColor = "white";
+            sessionArea_background.style.backgroundColor = "white";
+            lyricsArea_background.style.backgroundColor = "white";
+            
+            commentVideoSection.style.color = "black";
+            songIconButton.style.color = "black";
+            artistIconButton.style.color = "black";
+            configurationArea_1Content.style.color = "black";
+            artistList.style.color = "black";
+            sessionArea.style.color = "black";
+            
+            commentVideoSection.style.textShadow = "0px 0px 20px white";
+            songIconButton.style.textShadow = "0px 0px 20px white";
+            artistIconButton.style.textShadow = "0px 0px 20px white";
+            configurationArea_1Content.style.textShadow = "0px 0px 20px white";
+            artistList.style.textShadow = "0px 0px 20px white";
+            sessionArea.style.textShadow = "0px 0px 20px white";
+            
+            invisibleLayer_status = "1";
+        }
+    }
+</script>

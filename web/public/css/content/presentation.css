@@ -1,0 +1,264 @@
+#searchArea {
+    position: absolute;
+    z-index: 4;
+    right: 0px;
+    bottom: 40px;
+    top: 0px;
+    width: 180px;
+/*    background-color: #1ab7ea;*/
+    transition-property: all; 
+    transition-duration: 0.5s;
+}
+
+#searchArea_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#sessionArea {
+/*    background-color: #1ab7ea;*/
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    bottom: 40px;
+    right: 180px;
+    width: 360px;
+    overflow: hidden;
+    color: gray;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#sessionArea_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#configurationArea {
+    position: absolute;
+    width: 360px;
+    top: 0px;
+    bottom: 40px;
+    right: 540px;
+    z-index: 3;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#configurationArea_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#lyricsArea {
+    position: absolute;
+/*    background-color: #247CC0;*/
+    z-index: 1;
+    top: 0px;
+    bottom: 40px;
+    left: 50px;
+    right: 900px;
+    overflow: hidden;
+    opacity: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#lyricsArea_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+}
+
+
+
+div#listBar {
+    position: absolute;
+    z-index: 5;
+    top: 80px;
+    right: 180px;
+    width: 30px;
+    bottom: 40px;
+    height: 105px;
+    transition-property: all;
+    transition-duration: 2s;
+/*    background-color: #1ab7ea;*/
+}
+
+#configurationBar {
+    position: absolute;
+    z-index: 4;
+    left: 10px;
+    width: 30px;
+    top: 0px;
+    bottom: 40px;
+    transition-property: all;
+    transition-duration: 2s;
+/*    background-color: #1ab7ea;*/
+}
+
+
+div#manage {
+    position: absolute;
+    z-index: 4;
+    right: 780px;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+
+
+
+
+
+
+.tqm {
+    background-color: pink;
+}
+
+div.iconDiv {
+}
+
+
+div#presentationArea {
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    right: 180px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+div#playBanner {
+    position: absolute;
+/*    opacity: 0.2;
+    background-color: gray;*/
+    height: 40px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.animatedButton {
+/*    opacity: 0.3;*/
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.animatedButton:hover {
+    color: #1ab7ea;
+    text-shadow: 0px 0px 10px black;
+}
+
+.defaultInput {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: gray;
+    border: 0;
+    text-transform: uppercase;
+    align-content: center;
+}
+
+.basicButton {
+    width: 20px;
+    height: 20px;
+    color: gray;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.thumb{
+/*     width: 100%;*/
+     height: 100%;
+     border: 1px solid #000;
+     margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#my_video_environment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; height: 100%;
+    background-color: white;
+}
+
+#my_video {
+    background-color: white;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+.lyricsLine {
+    position: absolute;
+    color: white;
+    font-size: medium;
+    z-index: 5;
+    left: 0px;
+    width: 100%;
+    height: 25px;
+    display: block;
+    bottom: 100px;
+    color: #2EA265;
+    opacity: 0.2;
+    font-stretch: expanded;
+/*    background-color: #1ab7ea;*/
+}
+
+.lyricsWord {
+    display:inline-block;
+    color: white; 
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: 900;
+    text-shadow: 0px 0px 10px black;
+}
+
+.shortIcon {
+    width:30px; 
+    height:30px; 
+    opacity: 0.9;
+    z-index: 1;
+}

@@ -1,0 +1,3 @@
+promote_homepage:
+    path:     /promoteBundle
+    defaults: { _controller: PromoteBundle:Default:index }

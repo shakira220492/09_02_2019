@@ -1,0 +1,4 @@
+services:
+#    promote.example:
+#        class: PromoteBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
